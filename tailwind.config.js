@@ -4,9 +4,19 @@ module.exports = {
   // mode: "jit",
   theme: {
     extend: {},
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "0.5rem",
+        lg: "2rem",
+        xl: "2rem",
+        "2xl": "4rem",
+      },
+    },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
   purge: {
     // Filenames to scan for classes
     content: [
